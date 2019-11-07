@@ -45,6 +45,10 @@ class MainActivity : AppCompatActivity() {
         tv_card1.text = cards[previousCards[0]].value.toString()
         tv_card2.text = cards[previousCards[1]].value.toString()
         tv_card3.text = cards[previousCards[2]].value.toString()
+
+        iv_card1_next.setImageResource(cards[previousCards[0]].getIcon())
+        iv_card2_next.setImageResource(cards[previousCards[1]].getIcon())
+        iv_card3_next.setImageResource(cards[previousCards[2]].getIcon())
     }
 
     private fun parseCards() {
